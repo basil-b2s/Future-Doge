@@ -8,7 +8,7 @@ from datetime import date
 
 min_date = date(2022,1,18)
 
-model = pickle.load(open("model.pkl", 'rb'))
+model = pickle.load(open("models/model.pkl", 'rb'))
 
 app = Flask(__name__)
 @app.route('/')
@@ -37,6 +37,6 @@ def predict():
     
     # print(doge_price_list)
     # print(predicted_value)
-    return render_template("home.html", pred="{}".format(np.round(predicted_value[0][0], decimals=4)))
+    return render_template("home.html", pred="${}".format(np.round(predicted_value[0][0], decimals=4)))
 if __name__ == "__main__":
     app.run(debug=True)
