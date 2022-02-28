@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Doge</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <!-- <div class="form"> -->
+    <form class="form" action="\predict", method="POST">
+        <div class="title">Future Doge </div>
+        <div class="subtitle">Let's predict the future Doge Coin Price</div>
+        <div class="input-container ic1">
+        
+          <input name="date" class="input" type="date" min="2022-01-18" placeholder=" " required=True/>
+          <div class="cut"></div>
+          <label for="date" class="placeholder" >Date</label>
+        </div>
+
+        <button type="submit" class="submit">submit</button>
+        <div class="abs">
+            <!-- <div class="pred_heading">Predicted Price   :</div> -->
+            <h1 style="color:rgb(240, 240, 240);">{{ pred }}</h1>
+        </div>
+            <!-- <h1 style="color:rgb(240, 240, 240);">{{ pred }}</h1> -->
+    <form>
+        <!-- </div> -->
+</body>
+</html>
